@@ -1,4 +1,6 @@
-{% block title %}Sign up to Django Boards{% endblock %}
+{% extends 'base_accounts.html' %}
+
+{% block title %}Sign up to Polls{% endblock %}
 
 {% block content %}
   <div class="row justify-content-center">
@@ -8,7 +10,7 @@
           <h3 class="card-title">Sign up</h3>
           <form method="post" novalidate>
             {% csrf_token %}
-            {% include 'includes/form.html' %}
+            {% include 'form.html' %}
             <button type="submit" class="btn btn-primary btn-block">Create an account</button>
           </form>
         </div>
