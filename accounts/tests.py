@@ -20,11 +20,6 @@ class SignUpTests(TestCase):
     def test_contains_form(self):
         form = self.response.context.get('form')
         self.assertIsInstance(form, UserCreationForm)
-"""        
-     def test_contains_form(self):
-        form = self.response.context.get('form')
-        self.assertIsInstance(form, SignUpForm)
-"""
 
 class SuccessfulSignUpTests(TestCase):
     def setUp(self):
@@ -51,7 +46,7 @@ class SuccessfulSignUpTests(TestCase):
 class InvalidSignUpTests(TestCase):
     def setUp(self):
         url = reverse('signup')
-        self.response = self.client.post(url, {})  # submit an empty dictionary
+        self.response = self.client.post(url, {}) 
 
     def test_signup_status_code(self):
         '''

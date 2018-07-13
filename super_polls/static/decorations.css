@@ -1,18 +1,11 @@
-body {
-       background-image: url("/static/wallmobile.jpg");
-       background-repeat: no-repeat;
-       background-position: center;
-       background-attachment: fixed;
-       background-color: #cccccc;
-       background-size: cover;
-     }
-@media only screen and (min-width: 600px) {
-    body { 
-       background-image: url('pollsinit.jpg'); 
-       background-repeat: no-repeat;
-       background-position: center;
-       background-attachment: fixed;
-       background-color: #cccccc;
-       background-size: cover;
-    }
+body { 
+  background: url('/static/pollsinit.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.container{
+padding: 25px;   
+}    

@@ -8,10 +8,16 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
+        
       </li>
       <li class="nav-item">
-      <!--   <a class="nav-link" href="# ">Link</a>  a a chingar a su madre el link -->
+        <a class="nav-link" href="{% url 'encuestas' %}">Encuestas</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'resultados' %}">Resultados</a>
+      </li>
+     
+     <!-- A CHINGAR A SU MADRE EL DROPDOWN
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
@@ -19,15 +25,18 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'resultados' %}">Resultados</a>
           <a class="dropdown-item" href="{% url 'encuestas' %}">Encuestas</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+         <!-- <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Something else here</a> -->
+
         
-      </li>
-      <li class="nav-item">
-  <!--      <a class="nav-link disabled" href="#">Disabled</a>    a chingar a su madre el search bar y que viva peralta!!!!    #HailPeralta  -->      
+      
+      
+    
+      
+  
       </li>
     </ul>
+  </div>
    <div class="collapse navbar-collapse" id="mainMenu">
           {% if user.is_authenticated %}
             <ul class="navbar-nav ml-auto">

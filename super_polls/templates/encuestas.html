@@ -6,9 +6,12 @@
    <link rel="stylesheet" href="/static/decorations.css" type="text/css" />
 </head>
 <body>
-    <h1>Encuestas</h1>
-</body>
 
-<br> 
+<!--{% if obj_Encuesta.question_text != None and obj_Encuesta.question_text != '' %}
+                {{ obj_Encuesta.question_text }}
+                {% else %}  No hay encuestas
+        {% endif %} -->
+        {{my_text}}
+</body>    
 
 {% endblock content %} 

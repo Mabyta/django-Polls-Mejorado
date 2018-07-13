@@ -50,11 +50,11 @@
           {% block breadcrumb %}
           {% endblock %}
         </ol>
+         {% include 'navbar.html' %}
         {% block content %}
         
         {% endblock %}
         
-    {% include 'navbar.html' %}
       </div>
       {% endblock body %}
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

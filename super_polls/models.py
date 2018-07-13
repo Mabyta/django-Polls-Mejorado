@@ -1,5 +1,5 @@
 from django.db import models
-import datetime
+import datetime #peralta
 from django.utils import timezone
 from django.contrib.auth.models import User
 import math
@@ -10,7 +10,7 @@ from markdown import markdown
 
 
 class User_Polls(models.Model):
-    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    user = models.ForeignKey(User,on_delete=models.CASCADE, unique=True)
     image = models.FileField(null=True, blank=True)
     role = models.CharField(max_length=100)
     security_question = models.CharField(max_length=100)
