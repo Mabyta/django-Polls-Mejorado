@@ -20,10 +20,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          
         <div class="collapse navbar-collapse" id="mainMenu">
           {% if user.is_authenticated %}
             <ul class="navbar-nav ml-auto">
@@ -54,7 +51,10 @@
           {% endblock %}
         </ol>
         {% block content %}
+        
         {% endblock %}
+        
+    {% include 'navbar.html' %}
       </div>
       {% endblock body %}
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
