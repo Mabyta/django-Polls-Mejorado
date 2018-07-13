@@ -1,4 +1,4 @@
-{% extends 'base_accounts.html' %}
+{% extends 'accounts/base_accounts.html' %}
 
 {% block title %}Sign up to Polls{% endblock %}
 
@@ -10,7 +10,7 @@
           <h3 class="card-title">Sign up</h3>
           <form method="post" novalidate>
             {% csrf_token %}
-            {% include 'form.html' %}
+            {% include 'include/form.html' %}
             <button type="submit" class="btn btn-primary btn-block">Create an account</button>
           </form>
         </div>

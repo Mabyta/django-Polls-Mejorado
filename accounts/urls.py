@@ -7,5 +7,5 @@ from accounts import views as accounts_views
 
 urlpatterns = [
     path('signup/', accounts_views.signup, name='signup'),
-    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
 ]

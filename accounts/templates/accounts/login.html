@@ -1,4 +1,4 @@
-{% extends 'base_accounts.html' %}
+{% extends 'accounts/base_accounts.html' %}
 
 {% block title %}Log in to Django Boards{% endblock %}
 
@@ -11,7 +11,7 @@
           <form method="post" novalidate>
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ next }}">
-            {% include 'form.html' %}
+            {% include 'include/form.html' %}
             <button type="submit" class="btn btn-primary btn-block">Log in</button> 
             </form>
         </div>
